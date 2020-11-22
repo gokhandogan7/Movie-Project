@@ -22,13 +22,6 @@ export const CardList = (props) => {
             </Link>
           </button>
         </div>
-        <ReactPaginate
-          pageCount={Math.ceil(movieList.length / 3)}
-          pageRangeDisplayed={2}
-          marginPagesDisplayed={1}
-          onPageChange={(data) => fetchMovies(data.selected + 1)}
-          containerClassName="pagination"
-        />
         <Search onSearch={(val) => setSearchedValue(val)} />
       </StyledCardListWrapper>
       <StyledMoviesWrapper>

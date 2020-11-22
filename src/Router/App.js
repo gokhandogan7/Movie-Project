@@ -1,6 +1,7 @@
 import React, { useEffect, useState, createContext, useReducer } from "react";
 import { CardList } from "../components/CardList/index.js";
 import axios from "axios";
+import { StyledCardList } from "../components/CardList/CardList.style";
 
 require("dotenv").config();
 const apiKey = "2ab876e9698659187d8d9420ef4d232c";
@@ -33,7 +34,9 @@ function App() {
       <MovieContex.Provider
         value={{ movieList, setSearchedValue, fetchMovies }}
       >
+      
         <CardList />
+       
       </MovieContex.Provider>
     </div>
   );
