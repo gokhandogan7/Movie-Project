@@ -11,7 +11,7 @@ export const StyledCardWrapper = styled.div`
   margin: 50px 10px;
   transition: 0.3s;
   border-radius: 10px;
-
+  background-color: rgba(10, 10, 10, 0.5);
 
   &:hover {
     transform: scale(1.1);
@@ -30,24 +30,20 @@ export const StyledFooterWrapper = styled.div`
   justify-content: space-between;
   padding: 10px 20px;
 `;
+export const StyledButton = styled.button`
+  background-color: rgba(19,85,124,0.6);
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  border-radius: 5px;
 
-/////DERS TEKRARI
-// import "./Card.style.css"
-/* import styles from "./Card.module.css" */
-
-{
-  /* <div style={cardStyle}>
-TEST
-<div className={styles.cardWrapper}>
-    TEST-1
-</div>
-<StyledCardWrapper>
-    <p>Styled component</p>
-</StyledCardWrapper>
-
-<StyledCardWrapper2>
-    <p>deneme2</p>
-</StyledCardWrapper2>
-
-</div> */
-}
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+`;

@@ -4,6 +4,7 @@ import {
   StyledCardWrapper,
   StyledImgWrapper,
   StyledFooterWrapper,
+  StyledButton,
 } from "./Card.style";
 import defaultImg from "../../default.jpg";
 import { auth, db } from "../../firebase/fbconfig";
@@ -56,7 +57,7 @@ export const Card = ({ movie }) => {
             state: { ...movie },
           }}
         >
-          <button type="">Go To Detail {">>>"}</button>
+          <StyledButton type="">Go To Detail {">>>"}</StyledButton>
         </Link>
       </StyledFooterWrapper>
     </StyledCardWrapper>
