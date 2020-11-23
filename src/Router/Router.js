@@ -14,8 +14,8 @@ import { Login } from '../components/Login/Login';
 
 
 
-console.log(process.env.REACT_APP_DENEME)
-console.log(process.env)
+/* console.log(process.env.REACT_APP_DENEME)
+console.log(process.env) */
 
 export const Router = () => {
     return (

@@ -75,7 +75,7 @@ console.log(error)
           <p>{state.title}</p>
           <img
             src={"https://image.tmdb.org/t/p/w1280/" + state.poster_path}
-            style={{ width: "80%", height: 400 }}
+            style={{ width:'60%' , height:'auto'  }}
           />
           <p>imdb:{state.vote_average}</p>
         </div>
@@ -105,7 +105,9 @@ console.log(error)
           >
             <input type="number" onChange={(e) => setVal(e.target.value)} />
             <button type="submit">send</button>
+          
           </form>
+          
         </div>
       </div>
     </div>

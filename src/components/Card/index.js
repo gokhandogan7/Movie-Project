@@ -20,8 +20,13 @@ const favArray = [];
 export const Card = ({ movie }) => {
   const [flag, setFlag] = useState(false);
   const fav = {
+    id:movie.id,
     title: movie.title,
-    path: movie.poster_path,
+    poster_path: movie.poster_path,
+    release_date:movie.release_date,
+    vote_average:movie.vote_average,
+    overview:movie.overview
+
   };
   const addFirestore = () => {
     if (favArray.indexOf(movie.title) < 0) {
@@ -30,6 +35,7 @@ export const Card = ({ movie }) => {
       db.collection("favoriteMovies").add(fav);
     }
   };
+  console.log(movie.title)
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
       if (user) {
