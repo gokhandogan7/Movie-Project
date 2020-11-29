@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 export const StyledCardWrapper = styled.div`
   width: 320px;
   height: 500px;
@@ -12,13 +11,11 @@ export const StyledCardWrapper = styled.div`
   transition: 0.3s;
   border-radius: 10px;
   background-color: rgba(10, 10, 10, 0.5);
-
   &:hover {
     transform: scale(1.1);
     transition: 0.5s;
   }
 `;
-
 export const StyledImgWrapper = styled.img`
   border-radius: 10px;
   width: auto;
@@ -42,7 +39,6 @@ export const StyledButton = styled.button`
   margin: 5px 0px;
   transition-duration: 0.4s;
   border-radius: 5px;
-
   &:hover {
     background-color: white;
     color: black;

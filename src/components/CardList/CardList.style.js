@@ -1,17 +1,13 @@
-import styled from "styled-components";
-
+import styled from 'styled-components';
 
 export const StyledMoviesWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-`;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;                 
+`
 export const StyledCardListWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-`;
+                         
+`
+
